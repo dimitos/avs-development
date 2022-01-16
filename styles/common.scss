@@ -1,0 +1,25 @@
+@import './setup/mixins';
+@import './setup/variables';
+
+@import './setup/reset';
+@import './lib/swiper-bundle';
+@import './setup/helpers';
+
+@import './common/containers';
+@import './common/common';
+@import './common/titles';
+@import './common/links';
+@import './common/buttons';
+@import './common/modal';
+
+@import './blocks/header';
+@import './blocks/footer';
+
+@import './modal/privacy';
+@import './modal/request';
+@import './modal/map-radar';
+@import './modal/request-advice';
+@import './modal/request-repair';
+@import './modal/question';
+@import './modal/thanks';
+@import './modal/transition';

@@ -1,0 +1,99 @@
+.sl-promotion {
+    padding: 30px 0;
+    overflow: hidden;
+    background: $color-bg1;
+    @include pad {
+        padding: 60px 0;
+    }
+    @include desktop {
+        padding: 80px 0;
+    }
+}
+.sl-promotion__header {
+    position: relative;
+    z-index: 1;
+    padding-right: 150px;
+    margin-bottom: 30px;
+    @include pad {
+        padding-right: 280px;
+    }
+}
+.sl-promotion__tabs-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+    @include pad {
+        display: none;
+    }
+}
+.sl-promotion__tabs-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: $color-main1;
+    transition: all .3s ease;
+}
+.sl-promotion__tabs-icon:hover svg {
+    fill: $color-bg3;
+}
+.sl-promotion__tabs {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 280px;
+    height: 25px;
+    font-size: $text-small;
+    overflow: hidden;
+}
+.sl-promotion__tabs.sl-promotion__tabs-mobile {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 0;
+    height: 0;
+    padding: 0;
+    background: $color-white;
+    transition: all .3s ease;
+}
+.sl-promotion__tabs.sl-promotion__tabs-mobile.active {
+    width: 130px;
+    height: 160px;
+    padding: 10px 20px;
+}
+.sl-promotion__txt {
+    opacity: .5;
+}
+.sl-promotion__tab {
+    margin: 0 0 0 15px;
+    cursor: pointer;
+    color: $color-text;
+    opacity: 1;
+    transition: all .3s ease;
+}
+.sl-promotion__tab:hover {
+    opacity: .6;
+}
+.sl-promotion__tab.sl-promotion__tab-active:hover {
+    opacity: 1;
+}
+.sl-promotion__tab.sl-promotion__tab-active {
+    color: $color-bg3;
+}
+.sl-promotion__tabs-mobile .sl-promotion__tab {
+    margin: 8px 0 0;
+}
+.sl-promotion .btn-wrap {
+    text-align: center;
+}

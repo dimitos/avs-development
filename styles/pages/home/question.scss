@@ -1,0 +1,115 @@
+.question {
+    padding: 30px 0;
+    @include pad {
+        padding: 40px 0;
+    }
+}
+.question .container {
+    padding: 0;
+    @include desktop {
+        padding: 0 16px;
+    }
+}
+.question__container {
+    padding: 40px 16px 0;
+    background: $color-bg4;
+    @include pad {
+        padding: 40px;
+        background: $color-bg1;
+        background-image: url(/img/images/img_04.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100% 100%;
+    }
+    @include desktop {
+        padding: 80px 397px 80px 70px;
+    }
+}
+.question__title {
+    margin-bottom: 20px;
+}
+.question .btn-default {
+    width: 100%;
+    height: max-content;
+    padding: 13px 26px;
+    @include pad {
+        width: 205px;
+    }
+}
+.question__btn {
+    margin-top: 30px;
+    @include desktop {
+        margin: 0;
+    }
+}
+.question__fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    @include desktop {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+.question__form .input__item {
+    flex: 1;
+    margin: 20px 0 0 0;
+    @include desktop {
+        margin: 0 18px 0 0;
+    }
+}
+.question__privacy {
+    width: 100%;
+    margin-top: 15px;
+}
+.question__privacy-link {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.question__privacy-link:hover {
+    color: $color-main1;
+}
+.question__form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    max-width: 530px;
+    @include pad {
+        width: 55%;
+        max-width: none;
+    }
+    @include desktop {
+        flex-direction: row;
+        width: 100%;
+    }
+}
+.question__agreement {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 125%;
+    opacity: .8;
+}
+.question .section-text {
+    width: 100%;
+    @include pad {
+        margin-bottom: 0;
+        width: 55%;
+    }
+    @include desktop {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+}
+.question__img {
+    margin: 0 -16px;
+    @include pad {
+        display: none;
+    }
+}
+.question__img img {
+    width: 100%;
+}

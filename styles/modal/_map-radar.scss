@@ -1,0 +1,105 @@
+.intopModal-map-radar .intopModal__whiteContent {
+    width: 392px;
+    @include mobile {
+        width: calc(100vw - 20px);
+        max-width: 650px;
+    }
+    @include pad {
+        max-width: none;
+        width: 740px;
+    }
+    @include desktop-mini {
+        width: 1000px;
+    }
+    @include desktop {
+        width: 1200px;
+    }
+}
+.intopModal-map-radar .modal__inner {
+    display: flex;
+    flex-direction: column-reverse;
+    @include desktop-mini {
+        flex-direction: row;
+    }
+}
+.map-radar {
+    width: 100%;
+    height: 378px;
+    @include pad {
+        height: 577px;
+    }
+    @include desktop-mini {
+        width: 585px;
+        height: 748px;
+    }
+    @include desktop {
+        width: 784px;
+    }
+}
+.modal-title.map-radar-title {
+    margin-bottom: 20px;
+    @include pad {
+        margin-bottom: 30px;
+    }
+}
+.map-radar-content {
+    padding: 30px 20px;
+    flex: 1;
+    @include pad {
+        padding: 50px 30px;
+    }
+    @include desktop-mini {
+        padding: 80px 40px;
+    }
+}
+.map-radar__map {
+    width: 100%;
+    height: 100%;
+}
+.filter-sale__nav {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.filter-sale__nav-item {
+    width: 50%;
+}
+.filter-sale__nav-item .btn {
+    width: 100%;
+}
+.active-tab-1 .filter-sale__nav-item-1 .btn-default,
+.active-tab-2 .filter-sale__nav-item-2 .btn-default {
+    background: $color-main2;
+}
+.filter-sale__tab-1, .filter-sale__tab-2 {
+    display: none;
+}
+.active-tab-1 .filter-sale__tab-1,
+.active-tab-2 .filter-sale__tab-2 {
+    display: block;
+}
+.map-radar-content .filter__item {
+    display: inline-block;
+    padding: 0 0 0 27px;
+    line-height: 24px;
+    color: $color-text;
+}
+.map-radar-content .swiper-slide + .map-radar-content .swiper-slide {
+    @include desktop-mini {
+        margin-top: 10px;
+    }
+}
+.map-radar-content .swiper-slide {
+    width: auto;
+    margin-right: 30px;
+    @include desktop-mini {
+        margin: 0 !important;
+    }
+}
+.filter-swiper-1 .swiper-wrapper,
+.filter-swiper-2 .swiper-wrapper {
+    display: flex;
+    @include desktop-mini {
+        display: block;
+    }
+}

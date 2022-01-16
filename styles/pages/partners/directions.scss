@@ -1,0 +1,28 @@
+.partners-directions__title {
+    max-width: 500px;
+}
+.partners-directions .directions__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px -5px 0;
+    @include pad {
+        justify-content: initial;
+        margin: 30px -10px 0;
+    }
+}
+.partners-directions .directions__item {
+    width: 50%;
+    min-height: 82px;
+    padding: 0 5px;
+    margin-bottom: 15px;
+    @include pad {
+        width: calc(100% / 3);
+        min-height: 97px;
+        padding: 0 10px;
+        margin-bottom: 25px;
+    }
+    @include desktop {
+        width: 20%;
+    }
+}

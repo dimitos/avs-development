@@ -1,0 +1,30 @@
+.subpage-first__partners .subpage-first__title.first-title {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: $color-main2;
+}
+.subpage-first__partners-text {
+    max-width: 320px;
+    margin-bottom: 30px;
+    font-size: $text-medium-mini;
+    line-height: 145%;
+    letter-spacing: .01em;
+    color: $color-white;
+    @include pad {
+        max-width: 600px;
+    }
+}
+.subpage-first__txt-link {
+    color: $color-bg3;
+}
+.subpage-first__txt-link:hover {
+    color: $color-main2;
+}
+.subpage-first__text .btn {
+    display: none;
+    @include pad {
+        display: block;
+        margin-top: 30px;
+        width: 200px;
+    }
+}

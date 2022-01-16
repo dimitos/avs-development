@@ -1,0 +1,35 @@
+.intopModal-question .intopModal__whiteContent {
+    width: 386px;
+    @include pad {
+        width: 650px;
+    }
+}
+.intopModal-question .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 208px;
+    padding: 50px 35px;
+    background: $color-main1;
+}
+.intopModal-question .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 70px 103px;
+    @include pad {
+        padding: 59px 230px 66px;
+    }
+}
+.intopModal-question .modal-footer .btn {
+    width: 80px;
+    height: 52px;
+}
+.question-title {
+    font-size: $text-large;
+    line-height: 135%;
+    letter-spacing: .01em;
+    color: $color-white;
+    text-align: center;
+}

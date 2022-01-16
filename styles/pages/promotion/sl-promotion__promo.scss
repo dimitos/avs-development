@@ -1,0 +1,36 @@
+.sl-promotion__promo.sl-promotion {
+    padding: 60px 0 0;
+    background: $color-white;
+    @include pad {
+        padding: 70px 0 0;
+    }
+    @include desktop {
+        padding: 80px 0 0;
+    }
+}
+.sl-promotion__promo .sl-slider .swiper-slide {
+    padding-bottom: 0;
+}
+.sl-promotion__promo .sl-promotion__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    @include pad {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+.sl-promotion__promo .sl-promotion__title {
+    margin-bottom: 30px;
+    @include pad {
+        margin-bottom: 0;
+    }
+}
+.promo-link__wr {
+    display: flex;
+}
+.sl-promotion__promo .promo-link:hover {
+    border-bottom: 1px solid $color-bg3;
+    color: $color-bg3;
+}

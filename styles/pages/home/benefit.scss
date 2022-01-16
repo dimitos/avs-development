@@ -1,0 +1,51 @@
+.benefit {
+    padding: 30px 0;
+    @include pad {
+        padding: 60px 0;
+    }
+    @include desktop {
+        padding: 80px 0 40px;
+    }
+}
+.benefit__title {
+    max-width: 880px;
+    margin-bottom: 22px;
+    color: $color-white;
+}
+.benefit-slider .swiper-slide {
+    position: relative;
+    z-index: 0;
+}
+.benefit-slider .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: 50%;
+}
+.benefit-slider .swiper-slide__wr {
+    position: relative;
+    padding: 60px 20px 90px;
+    height: 420px;
+    @include pad {
+        padding: 80px 70px 90px;
+        height: 360px;
+    }
+}
+.benefit-slider .section-text {
+    margin-bottom: 50px;
+    color: $color-white;
+}
+.benefit-slider .swiper-pagination-bullets {
+    padding-top: 20px;
+    text-align: center;
+}
+.benefit .btn-default {
+    width: 330px;
+    margin: 0 auto;
+    @include pad {
+        width: auto;
+        margin: 0;
+    }
+}

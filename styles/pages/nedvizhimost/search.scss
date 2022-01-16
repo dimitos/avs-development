@@ -1,0 +1,33 @@
+.search {
+    position: relative;
+    min-height: 373px;
+}
+.search__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.search__container {
+    padding: 50px 0;
+}
+.search .breadcrumb {
+    position: relative;
+    padding: 0;
+    margin-bottom: 30px;
+    color: $color-white;
+}
+.search .breadcrumb__link:hover {
+    color: $color-white;
+}
+.search .breadcrumb__link:before {
+    background: url(/img/svg/icon-arrow-right-white.svg) 50%/cover no-repeat;
+}
+.first-title__search {
+    position: relative;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    @include pad {
+        margin-bottom: 20px;
+    }
+}

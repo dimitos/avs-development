@@ -1,0 +1,104 @@
+.promo {
+    padding: 15px 0 30px;
+    overflow: hidden;
+    @include pad {
+        padding: 30px 0 40px;
+    }
+}
+.promo__wrapper {
+    display: flex;
+    flex-direction: column;
+    @include pad {
+        flex-direction: row;
+    }
+}
+.promo__part {
+    width: 100%;
+    @include pad {
+        width: 50%;
+    }
+}
+.promo__part:first-child {
+    margin-bottom: 20px;
+    padding: 0;
+    @include pad {
+        margin-bottom: 0;
+        padding: 0 65px 0 0;
+    }
+}
+.promo__title {
+    opacity: 1;
+}
+.promo__part .section-text {
+    margin-top: 20px;
+    opacity: 1;
+    @include pad {
+        margin-top: 30px;
+    }
+}
+.promo-link {
+    display: inline-block;
+    line-height: 110%;
+    border-bottom: 1px solid $color-text;
+}
+.promo-link:hover {
+    border-bottom: 1px solid transparent;
+    color: $color-bg3;
+}
+.promo-advantage li {
+    position: relative;
+    padding-left: 25px;
+}
+.promo-advantage li::before {
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 9px;
+    width: 5px;
+    height: 5px;
+    background: $color-text;
+    border-radius: 50%;
+}
+.sl-promo-slider .sl-swiper-slide__img {
+    height: 175px;
+    min-height: 175px;
+    margin-bottom: 0;
+    @include mobile {
+        height: 39.8vw;
+    }
+    @include pad {
+        height: 305px;
+    }
+}
+.sl-promo-slider.sl-slider .swiper-slide {
+    padding-bottom: 0;
+}
+.sl-promo-slider.sl-slider .slider-nav {
+    top: 50%;
+}
+.sl-promo-slider .slider-nav {
+    max-width: calc(100% + 40px);
+    @include desktop {
+        max-width: calc(100% + 75px);
+    }
+}
+.sl-mini-promo__swiper {
+    margin: 0;
+}
+.sl-mini-promo__swiper {
+    display: none;
+    @include pad {
+        display: block;
+    }
+}
+.sl-promo-slider .sl-swiper,
+.sl-mini-promo__swiper.sl-swiper {
+    padding: 0;
+}
+.sl-promo-slider.sl-slider {
+    margin: 0 0 16px;
+}
+.sl-mini-promo__swiper .sl-swiper-slide__img {
+    height: 98px;
+    margin-bottom: 0;
+}

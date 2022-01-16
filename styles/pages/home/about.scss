@@ -1,0 +1,92 @@
+.about {
+    padding: 30px 0 0;
+    @include pad {
+        padding: 40px 0;
+    }
+}
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @include pad {
+        flex-direction: row;
+    }
+}
+.about__left {
+    width: 100%;
+    @include pad {
+        width: 50%;
+    }
+}
+.about__left-image {
+    height: 354px;
+    width: 100%;
+    @include pad {
+        height: 100%;
+        max-width: 488px;
+    }
+    @include desktop {
+        height: 476px;
+    }
+}
+.about__right {
+    width: 100%;
+    padding: 40px 0;
+    @include pad {
+        width: 50%;
+        padding: 20px 10px;
+    }
+}
+.about-paragraph {
+    margin-top: 20px;
+    @include pad {
+        margin-top: 30px;
+    }
+}
+.about__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    @include pad {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+}
+.about__list-part {
+    width: 100%;
+    padding-right: 15px;
+    @include pad {
+        width: 50%;
+    }
+}
+.about__list .section-text {
+    position: relative;
+    padding-left: 13px;
+
+    & + & {
+        margin-top: 5px;
+    }
+}
+.about__list .section-text::before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $color-text;
+}
+.about__right .btn {
+    margin-top: 40px;
+    @include pad {
+        margin-top: 50px;
+    }
+}
+.about__right .btn-default {
+    min-width: 100%;
+    @include pad {
+        min-width: 174px;
+    }
+}

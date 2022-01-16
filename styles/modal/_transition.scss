@@ -1,0 +1,54 @@
+.intopModal-transition .intopModal__whiteContent {
+    width: auto;
+    max-width: 452px;
+    @include pad {
+        max-width: none;
+        width: 650px;
+    }
+}
+.intopModal-transition .modal-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 263px;
+    overflow: hidden;
+}
+.intopModal-transition .modal-header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.transition-title {
+    position: relative;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-size: $text-large-medium;
+    line-height: 135%;
+    text-align: center;
+    letter-spacing: .01em;
+    color: #FFFFFF;
+    @include pad {
+        max-width: 515px;
+        text-transform: uppercase;
+    }
+}
+.intopModal-transition .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 37px 14px;
+}
+.intopModal-transition .modal-footer .btn:first-child {
+    margin-right: 20px;
+}
+.intopModal-transition .modal-footer .btn {
+    width: auto;
+    flex: 1;
+    @include pad {
+        width: 204px;
+        flex: initial;
+    }
+}
+
+

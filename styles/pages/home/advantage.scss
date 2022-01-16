@@ -1,0 +1,76 @@
+.advantage {
+    position: relative;
+    padding: 50px 0 110px;
+    background-image: url(/img/images/img_02-420.png);
+    background-color: $color-bg2;
+    background-position: bottom;
+    background-size: 136%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    @include mobile {
+        background-image: url(/img/images/img_02-767.png);
+    }
+    @include pad {
+        background-image: url(/img/images/img_02-1920.png);
+        padding: 80px 0 75px;
+        background-position: left;
+        background-size: contain;
+    }
+}
+.advantage__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @include pad {
+        flex-direction: row;
+    }
+}
+.advantage__block-1 {
+    width: 100%;
+    padding-right: 10px;
+    @include pad {
+        width: 31%;
+    }
+    @include desktop {
+        width: 26%;
+    }
+}
+.advantage__block-2 {
+    width: 100%;
+    margin-top: 15px;
+    padding-right: 10px;
+    @include pad {
+        width: 32%;
+    }
+    @include desktop {
+        width: 34%;
+    }
+}
+.advantage__block-3 {
+    width: 100%;
+    margin-top: 15px;
+    @include pad {
+        width: 37%;
+    }
+    @include desktop {
+        width: 40%;
+    }
+}
+.advantage__title {
+    margin-bottom: 25px;
+}
+.advantage__list .section-text {
+    position: relative;
+    padding-left: 13px;
+    margin-bottom: 15px;
+}
+.advantage__list .section-text::before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: $color-main2;
+}

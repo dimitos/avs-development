@@ -1,0 +1,23 @@
+.sl-arenda {
+    padding: 30px 0;
+    overflow: hidden;
+    @include pad {
+        padding: 35px 0;
+    }
+    @include desktop {
+        padding: 40px 0;
+    }
+}
+.sl-arenda .sl-swiper-slide__img {
+    height: 45vw;
+    min-height: 190px;
+    @include pad {
+        height: 20vw;
+    }
+    @include desktop {
+        height: 190px;
+    }
+}
+.sl-arenda .btn-wrap {
+    text-align: center;
+}

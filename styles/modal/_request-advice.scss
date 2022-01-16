@@ -1,0 +1,20 @@
+.intopModal-request-advice .intopModal__whiteContent {
+    @include pad {
+        width: 650px;
+    }
+}
+.intopModal-request-advice .mod-request__img {
+    display: none;
+    @include pad {
+        position: relative;
+        display: block;
+        width: 268px;
+    }
+}
+.intopModal-request-advice .mod-request__content {
+    padding: 68px 40px 68px;
+    flex: 1;
+    @include pad {
+        padding: 48px 62px 48px 20px;
+    }
+}

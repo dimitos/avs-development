@@ -1,0 +1,23 @@
+.sl-prodazha {
+    padding: 60px 0 30px;
+    overflow: hidden;
+    @include pad {
+        padding: 70px 0 35px;
+    }
+    @include desktop {
+        padding: 80px 0 40px;
+    }
+}
+.sl-prodazha .sl-swiper-slide__img {
+    height: 45vw;
+    min-height: 190px;
+    @include pad {
+        height: 20vw;
+    }
+    @include desktop {
+        height: 190px;
+    }
+}
+.sl-prodazha .btn-wrap {
+    text-align: center;
+}

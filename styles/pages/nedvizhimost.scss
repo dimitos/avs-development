@@ -1,0 +1,13 @@
+@import "../setup/mixins";
+@import "../setup/variables";
+
+@import "../blocks/search";
+
+@import "./nedvizhimost/search";
+@import "./nedvizhimost/property";
+@import "./nedvizhimost/pagination";
+
+@import './home/question';
+@import './home/partners';
+@import './home/clients';
+@import './home/advantage';

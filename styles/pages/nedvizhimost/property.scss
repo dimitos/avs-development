@@ -1,0 +1,201 @@
+.property {
+    padding: 60px 0 30px;
+    @include pad {
+        padding: 80px 0 40px;
+    }
+}
+.property__header-wr {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @include pad {
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+    @include desktop-mini {
+        margin-bottom: 50px;
+    }
+}
+.property__header-txt {
+    margin-top: 6px;
+    font-size: $text-small;
+    letter-spacing: .01em;
+    line-height: 145%;
+    opacity: .6;
+    @include pad {
+        margin-left: 30px;
+    }
+}
+.filter-choice__slider {
+    margin-bottom: 30px;
+}
+.filter-choice__slider .swiper-slide {
+    width: auto;
+}
+.filter-choice__slider .swiper-slide {
+    padding: 5px 10px;
+    font-size: $text-tiny;
+    white-space: nowrap;
+    background: $color-main2;
+    cursor: pointer;
+    transition: all .3s ease;
+    @include pad {
+        font-size: $text-small;
+    }
+}
+.filter-choice__slider .swiper-slide:hover {
+    opacity: .7;
+}
+.filter-choice__slider .swiper-slide i {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 11px;
+}
+.filter-choice__slider .swiper-slide i::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: url(/img/svg/icon-close-choice.svg) 50% / cover no-repeat;
+}
+.inner-sorter {
+    position: relative;
+    height: 24px;
+    margin: 0 0 25px;
+}
+.inner-sorter__title {
+    opacity: .5;
+}
+.sort-mobile .inner-sorter__title {
+    display: none;
+}
+.sort span {
+    margin-right: 15px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+.sort.sort-mobile span {
+    margin-right: 0;
+}
+.sort__item {
+    margin: 0 0 0 15px;
+    cursor: pointer;
+    color: $color-text;
+    opacity: 1;
+    transition: all .3s ease;
+}
+.sort__item:hover {
+    opacity: .6;
+}
+.sort__item.sort-select:hover {
+    opacity: 1;
+}
+.sort__item.sort-select {
+    color: $color-bg3;
+}
+.sort-mobile .sort__item {
+    width: 100%;
+    padding: 12px 0;
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid $color-bg5;
+}
+.sort-mobile .sort__item:nth-child(2) {
+    border-top: none;
+}
+.inner-sorter__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+    @include pad {
+        display: none;
+    }
+}
+.inner-sorter__icon svg {
+    width: 24px;
+    height: 24px;
+    fill: $color-main1;
+    transition: all .3s ease;
+}
+.inner-sorter__icon:hover svg {
+    fill: $color-bg3;
+}
+.sort {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: $text-small;
+    overflow: hidden;
+}
+.sort.sort-mobile {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 0;
+    height: 0;
+    padding: 0;
+    background: $color-white;
+    transition: all .3s ease;
+}
+.sort.sort-mobile.active {
+    width: 388px;
+    height: 194px;
+    padding: 0 16px;
+}
+.sort-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+.sort-list__item {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    & + & {
+        margin-left: 15px;
+        @include pad {
+            margin-left: 20px;
+        }
+    }
+}
+.sort-list__item svg {
+    fill: $color-bg5;
+    transition: all .3s ease;
+}
+.sort-list__item.active svg {
+    fill: $color-main1;
+}
+.sort-list__item:hover svg {
+    fill: $color-bg3;
+}
+.sort-list__item.active:hover svg {
+    fill: $color-main1;
+}
+.list-string .list__item-promotion {
+    display: none;
+}
+.list__item-promotion {
+    display: none;
+    @include pad {
+        display: block;
+    }
+}

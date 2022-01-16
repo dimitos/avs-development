@@ -1,0 +1,31 @@
+.partners {
+    padding: 40px 0;
+    overflow: hidden;
+}
+.partners__title {
+    margin-bottom: 30px;
+}
+.partners__slider.swiper {
+    overflow: initial;
+}
+.partners__slider .swiper-slide__wr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px 20px;
+    background: $color-bg2;
+}
+.partners__slider .swiper-slide {
+    height: 58px;
+    width: auto !important;
+    @include pad {
+        height: 65px;
+    }
+    @include desktop {
+        height: 72px;
+    }
+}
+.partners__slider .swiper-slide__img {
+    max-height: 100%;
+}

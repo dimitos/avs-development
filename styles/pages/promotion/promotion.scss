@@ -1,0 +1,33 @@
+.promotion__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.promotion__banner {
+    position: relative;
+    height: 106px;
+    margin: 0 0 30px;
+    order: 1;
+    @include mobile {
+        height: 26.5vw;
+    }
+    @include pad {
+        margin: 30px 0 0;
+        order: 2;
+    }
+    @include desktop {
+        height: 329px;
+    }
+}
+.promotion__title {
+    order: 2;
+    @include pad {
+        order: 1;
+    }
+}
+.promotion__wrapper .list__item-trig-wr {
+    order: 3;
+    margin-top: 15px;
+    @include pad {
+        margin-top: 27px;
+    }
+}
